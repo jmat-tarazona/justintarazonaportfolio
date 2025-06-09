@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+
+<!-- Combined Top Layout: Sidebar and Banner Side-by-Side -->
+<div class="top-area">
+
+  
+    <aside>
+    <img src="images/sidebarPic_clear.jpeg" alt="Professional Photo" width="150" class="s_pic">
+    <h2>General Information</h2>
+
+    <div class="contact-info">
+      <p>
+        <i class="fa-solid fa-envelope"></i>
+        Email:
+        <a href="mailto:jmat.tarazona@gmail.com">Jmat.Tarazona@gmail.com</a>
+      </p>
+      <p>
+        <i class="fa-solid fa-phone"></i>
+        Phone #:
+        <a href="tel:+9177055616">(917)-705-5616</a>
+      </p>
+
+      <div class="skills">
+        <h3>Skills</h3>
+
+        <h4>Programming Languages</h4>
+        <ul>
+          <li><i class="fab fa-python"></i> Python</li>
+          <li><i class="fab fa-java"></i> Java</li>
+          <li><i class="fas fa-database"></i> SQL</li>
+        </ul>
+
+        <h4>Web Development</h4>
+        <ul>
+          <li><i class="fab fa-html5"></i> HTML</li>
+          <li><i class="fab fa-css3-alt"></i> CSS</li>
+          <li><i class="fab fa-js"></i> JavaScript</li>
+        </ul>
+
+        <h4>Technical Tools</h4>
+        <ul>
+          <li><i class="fa-solid fa-diamond"></i>Git & GitHub</li>
+          <li><i class="fa-solid fa-diamond"></i>Microsoft Word, Excel, PowerPoint</li>
+          <li><i class="fa-solid fa-diamond"></i>Google Docs, Sheets, Slides</li>
+          <li><i class="fa-solid fa-diamond"></i>Slack, Zoom</li>
+        </ul>
+
+        <h4>Languages</h4>
+        <ul>
+          <li><i class="fa-solid fa-diamond"></i>Spanish</li>
+        </ul>
+      </div>
+
+      <div class="resume">
+  <h4>Resume</h4>
+  <img src="images/resume.png" alt="Resume Preview" width="100" style="cursor: pointer;" onclick="openResumeModal()">
+</div>
+
+<div id="resumePop">
+  <div id="TopBar">
+    <a href="ResumeJustinTarazona.pdf"> </a>
+    <button onclick="closeResumeModal()">
+      <i class="fa-solid fa-circle-xmark"></i>
+    </button>
+  </div>
+  <iframe src="ResumeJustinTarazona.pdf" width="100%" height="500px"></iframe>
+</div> 
+    
+    </aside>
+
+
+    <div class="main-right">
+
+     <div class="banner-content">
+        <div class="b_text">
+            <h1>Hi, I'm Justin Tarazona</h1>
+            <h2>Computer Science Student</h2>
+        </div>
+
+        <div class="wrap-bpic">
+            <img src="images/bannerPic_clear.png" alt="casual portfolio pic" class="b-pic">
+        </div>
+        </div>
+
+    <nav class = "main-nav">
+        <ul>
+        <li><a href = "index.html">Home</a></li>
+        <li> <a href = "#about"> About Me</a></li>
+        <li ><a href = "experience.html">Experience</a></li>
+        <li><a href = "edCertif.html">Education/Certificates</a></li>
+        <li><a href = "projects.html">Projects</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id = "about">
+        <h2>About Me</h2>
+        <p>
+            Hello!, from the top, you guessed it that's me, I'm Justin Tarazona. My major is computer science 
+            at Queens College. This is my website where you'll get to know me a little better. On the side, you'll see my business portfolio, where you might be curious about my skills, and languages, and see my resume for roles that  I'm capable of fulfilling. Or maybe you wanna get in touch not just about work or opportunities. Overall you can dive in and get to know me as a person and my background. 
+        </p>
+        </section>
+
+        <section id = "interests">
+        <h2> Interests </h2>
+        <p>
+            The thing that led me to pursue computer science was my vast curiosity and interest in the tech field given its multifaceted nature. Especially with its roles and positions; I'm someone who loves to try different things. That gravitated me toward computer science with its broad nature, allowing me to delve into different fields.  Overall, I'm someone who enjoys building things while understanding how they function. It leads me to build and work on projects like this website, where I can display my work. I take pride in honing in on my craft. 
+        </p>
+        <p>
+            On top of my enthusiasm for tech, I also find myself truly enjoying art. I think it is because of my love of art that makes wanna want to pursue the tech field.  What is not art but creating something unique with your own hands and not without the mind to envision it? Frankly, I'm quite proud to showcase my art portfolio on top of the project.  I'm always happy to engage in feedback cause that is one of many ways to learn and improve. 
+        </p>
+         </section>
+
+        <section id = "hobbies">
+            <h2>Hobbies</h2>
+            <p>
+                When I'm not focusing on building up my mind and personal skills, I take fitness rather seriously. I find it so enjoyable. As a form of being active and relaxing. Despite their coloring emotion that one would typically encounter while working out. However, I find the reward to be worthwhile and mainly refers to the satisfaction of completion.  
+                Other pastimes, that grab my attention are reading both physical and audio cause the voice acting that goes into it truly rivals that of actual media. Books that captivate me on top of movies and shows are those that offer compelling stories of vastly different representations of the possible absurdity of daily life. 
+            </p>
+        </section>
+
+        <section id = "aspirations">
+            <h2>Aspirations</h2>
+            <p>
+                A goal or desire that I'm always striving for is building up my education in order to develop my skills and understanding. That goes for not just in school but also in the workforce. It's why I seek out positions or events that help facilitate real applicable learning on top of the fundaments. All with the goal in mind of utilizing those skills to offer solutions to real-world problems. In many ways for me,  coding is coming across a problem and coming up with a solution, in my unique but still improving for ideal efficiency.  
+            </p>
+        </section>
+
+    </main>
+  
+    </div>
+</div>
+
+
+<footer>
+  <div class="footer-inner">
+    <hr>
+    <p>© Justin Tarazona Website | June 2025</p>
+  </div>
+</footer>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
