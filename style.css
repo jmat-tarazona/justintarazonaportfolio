@@ -6,11 +6,20 @@ body {
 }
 .top-area {
   display: flex;
-  width: 100%;
-  gap: 20px;  
+  gap: 20px;
   padding-right: 15px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
+
+.page-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
 
 aside {
   width: 300px;
@@ -19,12 +28,25 @@ aside {
   padding: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  height:80%;
   border-radius: 0 0 10px 0;
-
-  height: fit-content;      /* ✅ only as tall as the content */
-  max-height: 250vh;        /* ✅ prevents overflow if very tall */
+  height: fit-content;      
+  max-height: 230vh;        
     
+}
+
+aside a {
+  color: white;
+  text-decoration: none;
+}
+aside a:hover {
+  text-decoration: underline;
+}
+aside ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 .s_pic {
@@ -37,7 +59,8 @@ aside {
 }
 
 .resume {
-  margin-top: 30px;
+  margin-top: auto;
+  padding-top: 20px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -57,11 +80,11 @@ aside {
 }
 
 .banner-content {
-   background: linear-gradient(to right, #b388eb, #9d50bb);
+  background: linear-gradient(to right, #b388eb, #9d50bb);
   display: flex;
   justify-content: space-between;
   align-items: stretch;  
-  padding: 30px 20px;
+  padding: 0 20px;
   border-radius: 0 0 12px 12px;
   gap: 20px;
   color: white;
@@ -71,8 +94,12 @@ aside {
 .b-pic {
   height: 100%;
   object-fit: contain;
+  margin: 0;          
+  padding: 0;         
   display: block;
+  align-self: flex-end;
 }
+
 
 
 .b_text {
@@ -89,18 +116,14 @@ aside {
   align-items: flex-end;
   justify-content: flex-end;
   height: 100%;
+  padding: 0; 
+  margin: 0;
 }
 
-.b-pic {
-  margin-top: auto;       
-  display: block;
-  max-height: 100%;
-  object-fit: contain;
-}
 
-.b-pic {
-  margin-top: 30px;
-}
+
+
+
 
 .main-nav {
   background-color: #b388eb;
@@ -165,16 +188,31 @@ aside {
 
 
 .entry-box p {
-  color: #2c2a4a;
+  text-align: left;
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   line-height: 1.6;
-  margin: 10px 0;
 }
 
-.wrap-bpic {
+.entry-row {
   display: flex;
-  align-items: flex-end;
   justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  width: 100%;
 }
+
+.entry-row .entry-box {
+  flex: 1 1 400px;
+  max-width: 500px;
+  text-align: center;
+}
+
+
 
 nav.main-nav {
   width: 100%;
@@ -231,8 +269,9 @@ nav ul > li > a {
   flex: 0.5;
 }
 
+
 .experience-nav {
-  background-color: #b388eb;  /* lighter purple */
+  background-color: #b388eb; 
   padding: 10px 0;
   border-radius: 12px;
   margin: 0;
@@ -271,9 +310,20 @@ nav ul > li > a {
   margin-bottom: 60px;
 }
 
+.exp-info ul {
+  padding-left: 20px;
+  list-style-type: disc;
+  margin: 0;
+}
+
+.exp-info li {
+  text-align: left;
+  margin-bottom: 6px;
+}
+
 
 .education-page {
-  background: linear-gradient(to bottom right, #d3bce9, #b388eb);  /* 👈 soft purple background */
+  background: linear-gradient(to bottom right, #d3bce9, #b388eb);  
   padding: 40px 15px;  
   display: flex;
   flex-direction: column;
@@ -555,10 +605,11 @@ nav ul > li > a {
 
 footer {
   margin:0;
-  padding: 0;
+  padding-top: 30px;
   background: none;
   border: none;
   width: 100%;
+  padding-left: 0;
 }
 
 .footer-inner {
